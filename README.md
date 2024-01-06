@@ -29,17 +29,15 @@ How to customize QR code output:
   - Increase value of CELL_SIZE in NetSuiteQRCodeGenerator_UE.
 
 ## Input / Output
+![App Screenshot](screenshots/gif_jif_meme.jpeg)
+
 Input (as string): 
 
 ``Total is more than 100``
 
-Output:
+Output (Base64 encoded GIF):
 
 ``data:image/gif;base64,R0lGODdhBgEGAYA ... some data omitted ... IWUAAAOw==``
-
-Output format (Base64 encoded GIF):
-![App Screenshot](screenshots/gif_jif_meme.jpeg)
-
 
 ## Credits
 - QR Code Generator for JavaScript (http://www.d-project.com/)
