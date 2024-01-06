@@ -1,5 +1,5 @@
 # NetSuite QR Code Generator
-Simple SDF project that demonstrates how to generate & render server side generated QR code within NetSuite.
+Simple SDF project that demonstrates how to create & render server side generated QR code within NetSuite.
 
 ## Example:
 ![App Screenshot](screenshots/netsuite_qr_code.png)
