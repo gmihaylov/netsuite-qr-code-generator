@@ -39,6 +39,10 @@ Output (Base64 encoded GIF):
 
 ``data:image/gif;base64,R0lGODdhBgEGAYA ... some data omitted ... IWUAAAOw==``
 
+Rendered in INLINEHTML field as:
+
+``<img src="data:image/gif;base64,......." alt="QR Code"/>``
+
 ## Credits
 - QR Code Generator for JavaScript (http://www.d-project.com/)
 
