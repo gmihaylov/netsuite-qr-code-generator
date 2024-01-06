@@ -12,17 +12,20 @@ Simple SDF project that demonstrates how to create & render server side generate
 - NetSuiteQRCodeGenerator_SL just show how to implement the QR code in Suitelets
 
 ## Usage
+How to customize QR code output:
 - In NetSuiteQRCodeGenerator_UE, getData function:
 
-  - Remove comment if you want to generate QR code for the transaction URL:
+  - Uncomment this line if you want to generate QR code for the transaction URL:
     - ``return resolveRecordUrl(newRecord.type, newRecord.id);``
-  - Remove comment if you want to generate QR code for the transaction id:
+  - Uncomment this line if you want to generate QR code for the Transaction ID:
     - ``return newRecord.getValue({fieldId: 'tranid'});``
-  - Remove comment if you Want to generate QR code for the memo field value (default):
+  - Uncomment this line if you Want to generate QR code for the memo field value (default):
     - ``return newRecord.getValue({fieldId: 'memo'});``
-  - Want to customize more? Just write your code in getData():
+  - Want to customize more? Just write your code in getData() and use your imagination:
     - ``return "Here is my QR code!"``
-- How to make QR code bigger?
+    - or
+    - ``return 'This is a generated QR code for ' + newRecord.getValue({fieldId: 'anyOtherField'});``
+- How to make the QR code bigger?
   - Increase value of CELL_SIZE in NetSuiteQRCodeGenerator_UE
 
 ## Credits
